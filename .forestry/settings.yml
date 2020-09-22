@@ -17,5 +17,5 @@ build:
   preview_output_directory: public
   preview_docker_image: thibaultmorin/zola:latest
   mount_path: "/workdir"
-  working_dir: "/srv"
+  working_dir: "/workdir"
   instant_preview_command: zola serve
