@@ -1,4 +1,47 @@
 ---
 label: items_page
 hide_body: true
-fields: []
+fields:
+- name: sort_by
+  type: select
+  default: date
+  config:
+    required: true
+    options:
+    - date
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Sort by
+- name: transparent
+  type: boolean
+  label: Transparent
+  default: true
+- name: paginate_by
+  type: number
+  label: Paginate by
+  description: ''
+  default: 3
+  required: true
+  config:
+    min: 0
+    max: 
+    step: 
+    required: true
+- name: insert_anchor_link
+  type: select
+  default: right
+  config:
+    required: true
+    options:
+    - right
+    - left
+    - center
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Insert anchor link
