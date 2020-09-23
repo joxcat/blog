@@ -9,6 +9,8 @@ sections:
   label: Templates
   create: all
   match: "**/*"
+- type: heading
+  label: Posts
 - type: directory
   path: content/en
   label: Anglais
