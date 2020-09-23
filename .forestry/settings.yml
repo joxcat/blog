@@ -5,6 +5,11 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
+  path: templates
+  label: templates
+  create: all
+  match: "**/*"
+- type: directory
   path: content/en
   label: Anglais
   create: all
@@ -21,6 +26,7 @@ use_front_matter_path: false
 file_template: ":filename:"
 build:
   preview_output_directory: public
+  install_dependencies_command: npm install
   preview_docker_image: thibaultmorin/zola:latest
   mount_path: "/workdir"
   instant_preview_command: serve --interface 0.0.0.0 --port 8080 --output-dir public
