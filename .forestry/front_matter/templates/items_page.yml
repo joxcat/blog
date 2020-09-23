@@ -30,7 +30,7 @@ fields:
     max: 
     step: 
     required: true
-- name: insert_anchor_link
+- name: insert_anchor_links
   type: select
   default: right
   config:
@@ -44,4 +44,4 @@ fields:
       section: 
       file: 
       path: 
-  label: Insert anchor link
+  label: Insert anchor links
