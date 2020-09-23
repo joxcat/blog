@@ -2,3 +2,5 @@
 label: empty
 hide_body: false
 fields: []
+pages:
+- content/_index.md
