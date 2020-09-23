@@ -1,6 +1,6 @@
 ---
 label: items_page
-hide_body: true
+hide_body: false
 fields:
 - name: sort_by
   type: select
